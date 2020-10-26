@@ -1,0 +1,20 @@
+h1 {
+    text-align: center;
+    font-family: American Typewriter;
+}
+
+.f-to-c {
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+    padding: 30px;
+    background-color: #fff8dc;
+}
+
+.c-to-f {
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+    padding: 30px;
+    background-color: #dce3ff;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> <!-- for the head, i am calling on my css stylesheet, i'm calling for bootstrap, I am naming the tab, and i am calling my javascript-->
+        <link href="styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <title>Temperature Converter</title>
+        <script src="script.js"></script>
+    </head>
+    <body> <!--for the body, i am classifiying different divs, and setting up the page in a way that makes sense to the user.-->
+        <h1>Temperature Converter</h1>
+       <div class="f-to-c">
+        <h3>Fahrenheit to Celsius</h3>
+<p>
+  <label>Fahrenheit:</label>
+  <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverterFC(this.value)" onchange="temperatureConverterFC(this.value)">
+<!-- for the "oninput" the temperatureConverter has to be somewhat different, or the numbers will compute for both divs-->
+</p>
+<p>Celsius: <span id="outputCelsius"></span></p>
+
+       </div>
+       <div class="c-to-f">
+           <h3>Celsius to Fahrenheit</h3>
+    <p>
+        <label>Celsius:</label>
+        <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverterCF(this.value)" onchange="temperatureConverterCF(this.value)">
+    </p>
+    <p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+       </div>
+
+    </body>
+</html>
+
+<!--I was trying to do a length converter using this https://www.w3schools.com/howto/howto_js_length_converter.asp
+website, but unfortunately, i could not figure out how to make it work with multiple lengths at the same time. 
+only one length at a time.-->
